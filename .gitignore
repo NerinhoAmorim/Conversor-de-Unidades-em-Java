@@ -1,0 +1,43 @@
+# Ignore Eclipse project files
+.project
+.classpath
+.csettings/
+
+# Ignore Eclipse build directory
+/bin/
+
+# Ignore Eclipse local history
+.localhistory/
+
+# Ignore Java bytecode files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore Eclipse workspace settings
+.settings/
+
+# Ignore Maven output directories (for Maven projects)
+target/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore eclipse metadata folder
+.metadata/
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+
+# Ignore gradle build directory (for Gradle projects)
+.gradle/
+
+# Ignore Java temporary files
+*.tmp
