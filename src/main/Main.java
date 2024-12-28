@@ -8,6 +8,7 @@ import main.java.br.unidades.dados.ConversorDeDados;
 import main.java.br.unidades.massa.ConversorDeMassa;
 import main.java.br.unidades.potencia.ConversorDePotencia;
 import main.java.br.unidades.temperatura.ConversorDeTemperatura;
+import main.java.br.unidades.tempo.ConversorDeTempo;
 
 public class Main {
 	public static void main(String[] args) {
@@ -215,7 +216,8 @@ public class Main {
 			System.out.println("Erro: " + e.getMessage());
 		}
 	}
-
+	
+	//Conversor de Tempo
 	private static void chamarConversorDeTempo(Scanner scanner) {
 		System.out.println("=== Conversor de Tempo ===");
 		System.out.println("Escolha a unidade de entrada:");
@@ -223,20 +225,15 @@ public class Main {
 		System.out.println("2. Minutos");
 		System.out.println("3. Horas");
 		System.out.println("4. Dias");
-
 		int unidadeEntrada = scanner.nextInt();
-
 		System.out.print("Digite o valor: ");
 		double valorEntrada = scanner.nextDouble();
-
 		System.out.println("Escolha a unidade de saída:");
 		System.out.println("1. Segundos");
 		System.out.println("2. Minutos");
 		System.out.println("3. Horas");
 		System.out.println("4. Dias");
-
 		int unidadeSaida = scanner.nextInt();
-
 		try {
 			double resultado = ConversorDeTempo.converterTempo(unidadeEntrada, unidadeSaida, valorEntrada);
 			System.out.printf("Resultado: %.2f%n", resultado);
@@ -244,26 +241,21 @@ public class Main {
 			System.out.println("Erro: " + e.getMessage());
 		}
 	}
-
+	//Conversor de Velocidade
 	private static void chamarConversorDeVelocidade(Scanner scanner) {
 		System.out.println("=== Conversor de Velocidade ===");
 		System.out.println("Escolha a unidade de entrada:");
 		System.out.println("1. Metros por segundo (m/s)");
 		System.out.println("2. Quilômetros por hora (km/h)");
 		System.out.println("3. Milhas por hora (mph)");
-
 		int unidadeEntrada = scanner.nextInt();
-
 		System.out.print("Digite o valor: ");
 		double valorEntrada = scanner.nextDouble();
-
 		System.out.println("Escolha a unidade de saída:");
 		System.out.println("1. Metros por segundo (m/s)");
 		System.out.println("2. Quilômetros por hora (km/h)");
 		System.out.println("3. Milhas por hora (mph)");
-
 		int unidadeSaida = scanner.nextInt();
-
 		try {
 			double resultado = ConversorDeVelocidade.converterVelocidade(unidadeEntrada, unidadeSaida, valorEntrada);
 			System.out.printf("Resultado: %.2f%n", resultado);
@@ -271,7 +263,7 @@ public class Main {
 			System.out.println("Erro: " + e.getMessage());
 		}
 	}
-
+	//Conversor de Volume
 	private static void chamarConversorDeVolume(Scanner scanner) {
 		System.out.println("=== Conversor de Volume ===");
 		System.out.println("Escolha a unidade de entrada:");
@@ -279,20 +271,15 @@ public class Main {
 		System.out.println("2. Mililitros (mL)");
 		System.out.println("3. Metros cúbicos (m³)");
 		System.out.println("4. Galões (gal)");
-
 		int unidadeEntrada = scanner.nextInt();
-
 		System.out.print("Digite o valor: ");
 		double valorEntrada = scanner.nextDouble();
-
 		System.out.println("Escolha a unidade de saída:");
 		System.out.println("1. Litros (L)");
 		System.out.println("2. Mililitros (mL)");
 		System.out.println("3. Metros cúbicos (m³)");
 		System.out.println("4. Galões (gal)");
-
 		int unidadeSaida = scanner.nextInt();
-
 		try {
 			double resultado = ConversorDeVolume.converterVolume(unidadeEntrada, unidadeSaida, valorEntrada);
 			System.out.printf("Resultado: %.2f%n", resultado);
