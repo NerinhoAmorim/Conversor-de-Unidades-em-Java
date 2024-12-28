@@ -10,6 +10,7 @@ import main.java.br.unidades.potencia.ConversorDePotencia;
 import main.java.br.unidades.temperatura.ConversorDeTemperatura;
 import main.java.br.unidades.tempo.ConversorDeTempo;
 import main.java.br.unidades.velocidade.ConversorDeVelocidade;
+import main.java.br.unidades.volume.ConversorDeVolume;
 
 public class Main {
 	public static void main(String[] args) {
