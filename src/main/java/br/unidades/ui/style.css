@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e agradável */
+    background-color: #f1f1f1; /* Fundo claro e suave */
+    color: #333; /* Texto escuro para facilitar a leitura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff; /* Fundo branco para o container */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para não exagerar em telas grandes */
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Borda leve para o container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover no container */
+.container:hover {
+    transform: translateY(-5px); /* Efeito de elevação no hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 28px;
+    color: #007bff; /* Cor vibrante para o título */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555; /* Cor de texto suave e contrastante */
+}
+
+/* Campos de entrada */
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc; /* Borda suave nos campos */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fundo claro nos campos */
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito de foco nos campos */
+select:focus, input:focus {
+    border-color: #007bff; /* Cor azul vibrante no foco */
+    outline: none;
+    background-color: #fff; /* Mudança para fundo branco no foco */
+}
+
+/* Botão de conversão */
+button {
+    background-color: #28a745; /* Verde vibrante para o botão */
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover e clique no botão */
+button:hover {
+    background-color: #218838; /* Verde mais escuro ao passar o mouse */
+}
+
+button:active {
+    background-color: #1e7e34; /* Verde ainda mais escuro no clique */
+}
+
+/* Resultado da conversão */
+#resultado {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f0f8ff; /* Fundo suave e agradável para o resultado */
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #007bff; /* Borda azul clara */
+}
+
+/* Animação para o resultado aparecer */
+#resultado.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largura reduzida para telas menores */
+        padding: 15px; /* Menos espaçamento */
+    }
+
+    h1 {
+        font-size: 24px; /* Fonte menor para telas pequenas */
+    }
+
+    label {
+        font-size: 14px; /* Fontes menores para telas pequenas */
+    }
+
+    select, input, button {
+        font-size: 14px; /* Ajusta o tamanho da fonte nos campos e botões */
+        padding: 10px; /* Menos preenchimento para campos menores */
+    }
+
+    #resultado {
+        font-size: 14px; /* Tamanho da fonte menor no resultado */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Largura máxima mais estreita em telas muito pequenas */
+    }
+
+    h1 {
+        font-size: 20px; /* Fonte ainda menor para telas muito pequenas */
+    }
+}
