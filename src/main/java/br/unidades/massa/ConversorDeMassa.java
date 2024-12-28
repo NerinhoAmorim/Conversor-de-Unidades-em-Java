@@ -5,7 +5,7 @@ public class ConversorDeMassa {
 	public static double converterMassa(int unidadeEntrada, int unidadeSaida, double valorEntrada) {
 		double valorEmKg = 0;
 
-		// Converte a unidade de entrada para kg usando switch
+		// Converte a unidade de entrada para kg
 		switch (unidadeEntrada) {
 		case 0:
 			valorEmKg = valorEntrada;

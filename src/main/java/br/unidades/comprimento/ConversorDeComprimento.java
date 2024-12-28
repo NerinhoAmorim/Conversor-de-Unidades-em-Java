@@ -3,7 +3,7 @@ package main.java.br.unidades.comprimento;
 public class ConversorDeComprimento {
 
 	public static double converterComprimento(int unidadeEntrada, int unidadeSaida, double valorEntrada) {
-		// Converte a unidade de entrada para metros como base
+		// Converte a unidade de entrada para metros 
 		double valorEmMetros = 0;
 		switch (unidadeEntrada) {
 		case 1:

@@ -7,6 +7,7 @@ import main.java.br.unidades.comprimento.ConversorDeComprimento;
 import main.java.br.unidades.dados.ConversorDeDados;
 import main.java.br.unidades.massa.ConversorDeMassa;
 import main.java.br.unidades.potencia.ConversorDePotencia;
+import main.java.br.unidades.temperatura.ConversorDeTemperatura;
 
 public class Main {
 	public static void main(String[] args) {
@@ -192,26 +193,21 @@ public class Main {
 			System.out.println("Erro: " + e.getMessage());
 		}
 	}
-
+	//Conversor de Temperatura
 	private static void chamarConversorDeTemperatura(Scanner scanner) {
 		System.out.println("=== Conversor de Temperatura ===");
 		System.out.println("Escolha a unidade de entrada:");
 		System.out.println("1. Celsius (°C)");
 		System.out.println("2. Fahrenheit (°F)");
 		System.out.println("3. Kelvin (K)");
-
 		int unidadeEntrada = scanner.nextInt();
-
 		System.out.print("Digite o valor: ");
 		double valorEntrada = scanner.nextDouble();
-
 		System.out.println("Escolha a unidade de saída:");
 		System.out.println("1. Celsius (°C)");
 		System.out.println("2. Fahrenheit (°F)");
 		System.out.println("3. Kelvin (K)");
-
 		int unidadeSaida = scanner.nextInt();
-
 		try {
 			double resultado = ConversorDeTemperatura.converterTemperatura(unidadeEntrada, unidadeSaida, valorEntrada);
 			System.out.printf("Resultado: %.2f%n", resultado);

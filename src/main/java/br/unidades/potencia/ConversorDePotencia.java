@@ -5,7 +5,7 @@ public class ConversorDePotencia {
     public static double converterPotencia(int unidadeEntrada, int unidadeSaida, double valorEntrada) {
         double valorEmWatts = 0;
 
-        // Converte a unidade de entrada para watts (W) usando switch
+        // Converte a unidade de entrada para watts (W) 
         switch (unidadeEntrada) {
             case 0: 
                 valorEmWatts = valorEntrada;

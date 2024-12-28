@@ -3,7 +3,7 @@ package main.java.br.unidades.dados;
 public class ConversorDeDados {
 
 	public static double converterDados(int unidadeEntrada, int unidadeSaida, double valorEntrada) {
-		// Converte a unidade de entrada para bits como base
+		// Converte a unidade de entrada para bits 
 		double valorEmBits = 0;
 		switch (unidadeEntrada) {
 		case 1:
